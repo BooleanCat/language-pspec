@@ -1,0 +1,21 @@
+'scopeName': 'source.pspec'
+'name': 'pspec'
+'fileTypes': ['pspec']
+'patterns': [
+  {
+    'match': "\\b(describe)\\s+(\\'.*\\')"
+    'captures':
+      '1':
+        'name': 'keyword.describe.block.pspec'
+      '2':
+        'name': 'string.quoted.pspec'
+  }
+  {
+    'match': "\\b(it)\\s+(\\'.*\\')"
+    'captures':
+      '1':
+        'name': 'keyword.it.block.pspec'
+      '2':
+        'name': 'string.quoted.pspec'
+  }
+]
